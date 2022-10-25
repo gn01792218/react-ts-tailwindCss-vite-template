@@ -1,10 +1,9 @@
-import logo from '../assets/images/logo.svg'
+import logo from '@/assets/images/logo.svg'
 import { useState } from 'react'
 function Home() {
     const [count, setCount] = useState(0)
     return (
         <div className='text-white'>
-            這是首頁
             <header className="text-white">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>Hello Vite + React!</p>
