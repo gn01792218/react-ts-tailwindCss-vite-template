@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import AutoImport from 'unplugin-auto-import/vite'
-const {resolve} = require('path')
+# react+ts+tailwindCss 樣板
+## 讓專案擁有自動import 功能
+```javascript
+npm i -D unplugin-auto-import
 
-// https://vitejs.dev/config/
+//vite.config.ts
+import { defineConfig } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+
 export default defineConfig({
   plugins: [
     react(),
@@ -12,12 +15,5 @@ export default defineConfig({
       dts:'src/auto-imports.d.ts'
     })
   ],
-  define:{
-    'process.env':{}
-  },
-  resolve:{
-    alias:{
-      '@':resolve(__dirname,'src'),
-    }
-  }
 })
+```

@@ -1,5 +1,4 @@
-import { lazy, Suspense } from 'react'
-import { Routes, Route } from "react-router-dom";
+import { Suspense } from 'react'
 import Home from '../views/Home'
 
 function Routers() {
